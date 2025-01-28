@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html leng = "en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Profil</title>
+  </head>
+
+  <body>
+    <a href ="/">Kembali</a>
+    <form action = "/perbarui" method = "POST">
+        <input type = "hidden" name = "id" value = "{{ data[0] }}"></br>
+        Nama
+        <input type = "text" name = "name" value = "{{ data[1] }}"></br>
+        NIM
+        <input type = "text" name = "nim" value = "{{ data[2] }}"><br>
+        Jurusan
+        <input type = "text" name = "jurusan" value = "{{ data[3] }}"><br>
+        <input type = "submit" value = "SIMPAN">
+    </form>
+
+</body>
+</html>
